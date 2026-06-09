@@ -7,4 +7,8 @@ public class DemoTest {
 		System.out.println("this is add method");
 	}
 	
+	public void mul() {
+		System.out.println("this is multiply method");
+	}
+	
 }
