@@ -15,5 +15,9 @@ public class DemoTest {
 		System.out.println("this is subtraction method :"+c);
 	}
 	
+	public void mul() {
+		System.out.println("this is multiply method");
+	}
+	
 }
 }
