@@ -5,9 +5,8 @@
 	<groupId>org.automationwithpiyush</groupId>
 	<artifactId>seleniumautomationg6</artifactId>
 	<version>0.0.1</version>
-	
-	
-	
+
+
 	<dependencies>
 
 		<dependency>
@@ -41,7 +40,13 @@
 			<artifactId>testng</artifactId>
 			<version>7.12.0</version>
 		</dependency>
-
+		
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>5.1.2</version>
+		</dependency>
+		
+		
 	</dependencies>
-
 </project>
