@@ -15,6 +15,7 @@ public class DemoTest {
 	
 	public void mul() {
 		System.out.println("this is multiply method");
+		System.out.println("hii its me");
 	}
 	
 }
