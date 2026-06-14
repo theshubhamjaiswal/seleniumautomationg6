@@ -16,6 +16,13 @@ public class WebDriverUtility {
 	WebDriver driver;
 	Actions act;
 	WebDriverWait wait;
+	Select sel;
+
+	public WebDriverUtility(WebDriver driver) {
+		this.driver = driver;
+		this.act = new Actions(driver);
+		this.wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+	}
 
 	public void maximize() {
 		driver.manage().window().maximize();
@@ -41,7 +48,7 @@ public class WebDriverUtility {
 	}
 
 	public void selectDropdownFromIndex(WebElement element, int index) {
-		Select sel = new Select(element);
+		sel = new Select(element);
 		sel.selectByIndex(index);
 	}
 
@@ -59,6 +66,7 @@ public class WebDriverUtility {
 
 		}
 	}
+
 	public void switchToParentWindow(String pid) {
 		driver.switchTo().window(pid);
 	}
