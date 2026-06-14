@@ -1,0 +1,27 @@
+<suite parallel="tests" name="suite">
+	<test parallel="tests" name="testrunner1">
+		<classes>
+			<class name="execute_contact.ContactTest" />
+		</classes>
+	</test>
+	<test parallel="tests" name="testrunner2">
+		<classes>
+			<class name="execute_leads.LeadsTest" />
+		</classes>
+	</test>
+	<test parallel="tests" name="testrunner3">
+		<classes>
+			<class name="execute_oppo.OppoTest" />
+		</classes>
+	</test>
+	<test parallel="tests" name="testrunner4">
+		<classes>
+			<class name="execute_org.OrgTest" />
+		</classes>
+	</test>
+	<test parallel="tests" name="testrunner5">
+		<classes>
+			<class name="execute_products.ProductsTest" />
+		</classes>
+	</test>
+</suite>

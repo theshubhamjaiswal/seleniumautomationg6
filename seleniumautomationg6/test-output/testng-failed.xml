@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [suite]">
+  <test thread-count="5" parallel="tests" name="testrunner1(failed)">
+    <classes>
+      <class name="execute_contact.ContactTest">
+        <methods>
+          <include name="createContactTest"/>
+          <include name="logout"/>
+          <include name="setUp"/>
+          <include name="teardown"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- execute_contact.ContactTest -->
+    </classes>
+  </test> <!-- testrunner1(failed) -->
+</suite> <!-- Failed suite [suite] -->

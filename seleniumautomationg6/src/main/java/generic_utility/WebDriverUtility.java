@@ -34,7 +34,7 @@ public class WebDriverUtility {
 
 	public void hover(WebElement element) {
 		act = new Actions(driver);
-		act.moveToElement(element);
+		act.moveToElement(element).build().perform();
 	}
 
 	public void waitForElemetVisible(WebElement element, int timeoutOfsecond) {

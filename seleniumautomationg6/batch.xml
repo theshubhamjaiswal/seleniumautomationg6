@@ -1,0 +1,11 @@
+<suite name="suits">
+	<test name="tests">
+		<classes>
+			<class name="execute_contact.ContactTest" />
+			<class name="execute_leads.LeadsTest" />
+			<class name="execute_oppo.OppoTest" />
+			<class name="execute_org.OrgTest" />
+			<class name="execute_products.ProductsTest" />
+		</classes>
+	</test>
+</suite>

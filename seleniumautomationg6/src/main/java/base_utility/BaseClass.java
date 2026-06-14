@@ -43,8 +43,6 @@ public class BaseClass {
 		LoginPage lp=new LoginPage(driver);
 		lp.login();
 		System.out.println("Login successful");
-		String r=futil.getDataFromExcelFile("contact", 2, 0);
-		System.out.println(r);
 	}
 
 	@AfterMethod

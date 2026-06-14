@@ -37,7 +37,7 @@ public class FileUtility {
 
 	public String getDataFromExcelFile(String sheet, int row, int cell)
 			throws EncryptedDocumentException, IOException {
-		FileInputStream fis = new FileInputStream("./test/resources/testscriptdataorg.xlsx");
+		FileInputStream fis = new FileInputStream("./src/test/resources/testscriptdataorg.xlsx");
 		Workbook wb = WorkbookFactory.create(fis);
 		Sheet st = wb.getSheet(sheet);
 		Row rw=st.getRow(row);
