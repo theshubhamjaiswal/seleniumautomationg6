@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-suite" class="navigator-link ">
-                    <span>C:\Users\Aditya Singh\git\seleniumautomationg6\seleniumautomationg6\parallel.xml</span>
+                    <span>parallel.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -129,16 +129,14 @@
                   <a name="createContactTest">
                   </a> <!-- createContactTest -->
                   <span class="method-name">createContactTest</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: chrome=149.0.7827.103)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=149.0.7827.116)
 Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.4.1&apos;, java.version: &apos;21.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [54cb21e05813e9ddd6d04e929c92adad, clickElement {id=f.A4D08AEA73743C1B91ECE9B2F4A4E2C8.d.2EBB092E21FCCC152AE9E2A6F79A2CFA.e.123}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.55 (3188f8a607ae..., userDataDir: C:\Users\ADITYA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52915}, goog:processID: 20504, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52915/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (54cb21e05813e9ddd6d04e929c92adad)] -&gt; id: submitButton]
-Session ID: 54cb21e05813e9ddd6d04e929c92adad
+Command: [058d315c229a2435cb0552dd8615f2c5, get {url=http://localhost:8888}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.116, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: /var/folders/bf/vg7s6qt17nb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53981}, goog:processID: 13802, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:53981/devtoo..., se:cdpVersion: 149.0.7827.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 058d315c229a2435cb0552dd8615f2c5
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -146,18 +144,14 @@ Session ID: 54cb21e05813e9ddd6d04e929c92adad
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:225)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
-	at object_repository.LoginPage.login(LoginPage.java:39)
-	at base_utility.BaseClass.login(BaseClass.java:44)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:366)
+	at base_utility.BaseClass.login(BaseClass.java:42)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 21 stack frames
+... Removed 19 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -166,7 +160,7 @@ Session ID: 54cb21e05813e9ddd6d04e929c92adad
         </div> <!-- panel suite -->
         <div panel-name="test-xml-suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Aditya Singh\git\seleniumautomationg6\seleniumautomationg6\parallel.xml</span>
+            <span class="header-content">/Users/apple/git/seleniumautomationg6/seleniumautomationg6/parallel.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -256,7 +250,7 @@ window.suiteTableData['suite']= { tableData: data, tableDiv: 'times-div-suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <span class="suite-total-time">Total running time: 20 seconds</span>
               <div id="times-div-suite">
               </div> <!-- times-div-suite -->
             </div> <!-- times-div -->
@@ -299,46 +293,30 @@ return data;
               <div class="chronological-class-name">execute_oppo.OppoTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">1 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">execute_org.OrgTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">1 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">execute_products.ProductsTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">1 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">execute_contact.ContactTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">execute_leads.LeadsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">login</span>
-                <span class="method-start">3682 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">execute_products.ProductsTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">login</span>
-                <span class="method-start">3693 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">execute_org.OrgTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">login</span>
-                <span class="method-start">3695 ms</span>
+                <span class="method-start">19578 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -347,24 +325,35 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">login</span>
-                <span class="method-start">3698 ms</span>
+                <span class="method-start">19578 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">execute_leads.LeadsTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">execute_org.OrgTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">login</span>
-                <span class="method-start">3710 ms</span>
+                <span class="method-start">19578 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">execute_products.ProductsTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">15239 ms</span>
-              </div> <!-- configuration-class after -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">login</span>
+                <span class="method-start">19578 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">execute_contact.ContactTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">login</span>
+                <span class="method-start">20219 ms</span>
+              </div> <!-- configuration-method before -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
