@@ -1,0 +1,23 @@
+
+<suite parallel="tests" name="Suite">
+	<test  parallel="tests" name="TestRunner1">
+		<parameter name="bro" value="chrome" />
+		<classes>
+			<class name="extra_execution.OrgTest" />
+		</classes>
+	</test>
+	
+	<test  parallel="tests" name="TestRunner2">
+		<parameter name="bro" value="edge" />
+		<classes>
+			<class name="extra_execution.ContactTest" />
+		</classes>
+	</test>
+	
+	<test  parallel="tests" name="TestRunner3">
+		<parameter name="bro" value="edge" />
+		<classes>
+			<class name="extra_execution.LeadTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

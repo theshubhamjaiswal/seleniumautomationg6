@@ -1,0 +1,16 @@
+<suite name="s">
+	<groups>
+		<run>
+			<include name="reg"/>
+			
+			
+		</run>
+	</groups>
+	<test name="t">
+		<classes>
+			<class name="extra_execution.LeadTest1" />
+			<class name="extra_execution.OrgTest1" />
+		</classes>
+	</test>
+
+</suite>

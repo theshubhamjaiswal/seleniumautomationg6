@@ -16,9 +16,6 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 import base_utility.BaseClass;
 import generic_utility.JavaUtility;
 
-
-
-
 public class List_Imp implements ITestListener, ISuiteListener {
 	public ExtentReports report;
 	public ExtentTest test;
@@ -53,10 +50,10 @@ public class List_Imp implements ITestListener, ISuiteListener {
 	public void onTestFailure(ITestResult result) {
 		String methodName = result.getMethod().getMethodName();
 		test.log(Status.FAIL, methodName + " is failed");
-		
-		TakesScreenshot tks=(TakesScreenshot) BaseClass.driver;
-		String ss=tks.getScreenshotAs(OutputType.BASE64);
-		test.addScreenCaptureFromBase64String(ss,methodName);
+
+		TakesScreenshot tks = (TakesScreenshot) BaseClass.driver;
+		String ss = tks.getScreenshotAs(OutputType.BASE64);
+		test.addScreenCaptureFromBase64String(ss, methodName);
 	}
 
 	@Override

@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="execute_products.ProductsTest">
+      <class name="execute_products.CreateMultipleProductsTest">
         <methods>
           <include name="logout"/>
-          <include name="runProductTest"/>
+          <include name="createProductWithDataTest"/>
           <include name="setUp"/>
           <include name="teardown"/>
           <include name="login"/>
         </methods>
-      </class> <!-- execute_products.ProductsTest -->
+      </class> <!-- execute_products.CreateMultipleProductsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

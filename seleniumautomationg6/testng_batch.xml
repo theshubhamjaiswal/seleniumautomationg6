@@ -1,0 +1,17 @@
+<suite name="Vtiger_Sequential_Batch_Suite">
+
+	<listeners>
+		<listener class-name="listener_utility.List_Imp" />
+	</listeners>
+
+	<test name="Component_Module_Validations">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="execute_org.OrgTest" />
+			<class name="execute_leads.LeadsTest" />
+			<class name="execute_products.ProductsTest" />
+			<class name="execute_contact.ContactTest" />
+			<class name="execute_oppo.OppoTest" />
+		</classes>
+	</test>
+</suite>

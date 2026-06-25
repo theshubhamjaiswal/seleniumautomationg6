@@ -74,6 +74,28 @@ public class ContactPage {
 	@FindBy(id="dtlview_Last Name")
 	private WebElement verifyLastName;
 	
+	@FindBy(id="search_txt")
+	private WebElement searchBar;
+	
+	public WebElement getSearchBar() {
+		return searchBar;
+	}
+
+	public WebElement getSearchButton() {
+		return searchButton;
+	}
+
+	public WebElement getSearchedOrg() {
+		return searchedOrg;
+	}
+
+	@FindBy(css="input[name='search']")
+	private WebElement searchButton;
+	
+	@FindBy(id="1")
+	private WebElement searchedOrg;
+	
+	
 	}
 	
 

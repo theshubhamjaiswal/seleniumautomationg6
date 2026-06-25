@@ -1,0 +1,22 @@
+<suite name="Vtiger_CrossBrowser_Suite" parallel="tests" thread-count="2">
+    
+    <listeners>
+        <listener class-name="listener_utility.List_Imp"/>
+    </listeners>
+
+    <test name="Automated_Sanity_Chrome">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="execute_org.OrgTest"/>
+            <class name="execute_products.ProductsTest"/>
+        </classes>
+    </test>
+
+    <test name="Automated_Sanity_Firefox">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="execute_org.OrgTest"/>
+            <class name="execute_products.ProductsTest"/>
+        </classes>
+    </test>
+</suite>

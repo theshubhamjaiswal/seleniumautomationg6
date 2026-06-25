@@ -1,0 +1,164 @@
+<html>
+<head>
+<title>TestNG:  Concurrent_Module_Execution</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Concurrent_Module_Execution</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>6/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jun 25 21:39:09 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>141 seconds (141080 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='execute_products.CreateMultipleProductsTest.createProductWithDataTest()'><b>createProductWithDataTest</b><br>Test class: execute_products.CreateMultipleProductsTest<br>Test method: Data-driven creation of variant products<br>Parameters: AI_Analytics_Module<br/>
+<a href="#Output-156206125" onClick='toggleBox("Output-156206125", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-156206125" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-156206125">
+Data-Driven Input - Creating Product: AI_Analytics_Module_300<br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>execute_products.CreateMultipleProductsTest@1ce24091</td></tr>
+<tr>
+<td title='execute_products.ProductsTest.createProductTest()'><b>createProductTest</b><br>Test class: execute_products.ProductsTest<br>Test method: Verify successful creation and confirmation of a new Product record<br/>
+<a href="#Output-1489519762" onClick='toggleBox("Output-1489519762", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1489519762" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1489519762">
+Navigated to 'Create Product' page Layout<br/>
+Entered Product Name: parle_<br/>
+Clicked on Save button<br/>
+Validating actual Product Name [parle_] against expected [parle_]<br/>
+</div>
+</td>
+<td></td>
+<td>39</td>
+<td>execute_products.ProductsTest@fbd1f6</td></tr>
+<tr>
+<td title='execute_products.CreateMultipleProductsTest.createProductWithDataTest()'><b>createProductWithDataTest</b><br>Test class: execute_products.CreateMultipleProductsTest<br>Test method: Data-driven creation of variant products<br>Parameters: Enterprise_CRM_Cloud<br/>
+<a href="#Output-996190235" onClick='toggleBox("Output-996190235", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-996190235" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-996190235">
+Data-Driven Input - Creating Product: Enterprise_CRM_Cloud_203<br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>execute_products.CreateMultipleProductsTest@1ce24091</td></tr>
+<tr>
+<td title='execute_products.CreateMultipleProductsTest.createProductWithDataTest()'><b>createProductWithDataTest</b><br>Test class: execute_products.CreateMultipleProductsTest<br>Test method: Data-driven creation of variant products<br>Parameters: Fintech_Payment_Gateway<br/>
+<a href="#Output-1512132330" onClick='toggleBox("Output-1512132330", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1512132330" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1512132330">
+Data-Driven Input - Creating Product: Fintech_Payment_Gateway_526<br/>
+</div>
+</td>
+<td></td>
+<td>24</td>
+<td>execute_products.CreateMultipleProductsTest@1ce24091</td></tr>
+<tr>
+<td title='execute_org.OrgTest.createOrgTest()'><b>createOrgTest</b><br>Test class: execute_org.OrgTest<br>Test method: Verify successful creation of an organization<br/>
+<a href="#Output-1366171761" onClick='toggleBox("Output-1366171761", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1366171761" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1366171761">
+Navigated to 'Create Organization' layout<br/>
+Entered Organization Name with random suffix: awshubh_903<br/>
+Clicked on Save button<br/>
+Validating actual Organization Name [awshubh_903] against expected [awshubh_903]<br/>
+</div>
+</td>
+<td></td>
+<td>35</td>
+<td>execute_org.OrgTest@40005471</td></tr>
+<tr>
+<td title='execute_leads.LeadsTest.createLeadTest()'><b>createLeadTest</b><br>Test class: execute_leads.LeadsTest<br>Test method: Verify successful creation and validation of a new Lead record<br/>
+<a href="#Output-1571912638" onClick='toggleBox("Output-1571912638", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1571912638" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1571912638">
+Navigated to the 'Create Lead' page<br/>
+Entered Lead First Name: shubham_<br/>
+Entered Lead Last Name: jaiswal<br/>
+Entered Company Name: ty_<br/>
+Clicked on Save button<br/>
+Validating saved Last Name [jaiswal] against expected [jaiswal]<br/>
+Validating saved Company Name [ty_] against expected [ty_]<br/>
+</div>
+</td>
+<td></td>
+<td>33</td>
+<td>execute_leads.LeadsTest@55fe41ea</td></tr>
+</table><p>
+</body>
+</html>
