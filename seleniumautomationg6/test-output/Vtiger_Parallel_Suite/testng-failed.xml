@@ -1,48 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="3" parallel="classes" name="Failed suite [Vtiger_Parallel_Suite]">
+<suite parallel="tests" name="Failed suite [Vtiger_Parallel_Suite]">
   <listeners>
     <listener class-name="listener_utility.List_Imp"/>
   </listeners>
-  <test thread-count="3" parallel="classes" name="Concurrent_Module_Execution(failed)">
-    <parameter name="browser" value="chrome"/>
+  <test thread-count="5" parallel="tests" name="testrunner1(failed)">
     <classes>
-      <class name="execute_products.CreateMultipleProductsTest">
+      <class name="execute_contact.ContactTest">
         <methods>
-          <include name="logout"/>
-          <include name="createProductWithDataTest" invocation-numbers="0"/>
-          <include name="setUp"/>
-          <include name="teardown"/>
-          <include name="login"/>
-        </methods>
-      </class> <!-- execute_products.CreateMultipleProductsTest -->
-      <class name="execute_leads.LeadsTest">
-        <methods>
-          <include name="logout"/>
-          <include name="setUp"/>
-          <include name="createLeadTest"/>
-          <include name="teardown"/>
-          <include name="login"/>
-        </methods>
-      </class> <!-- execute_leads.LeadsTest -->
-      <class name="execute_products.ProductsTest">
-        <methods>
-          <include name="logout"/>
-          <include name="createProductTest"/>
-          <include name="setUp"/>
-          <include name="teardown"/>
-          <include name="login"/>
-        </methods>
-      </class> <!-- execute_products.ProductsTest -->
-      <class name="execute_org.OrgTest">
-        <methods>
-          <include name="createOrgTest"/>
+          <include name="createContactTest"/>
           <include name="logout"/>
           <include name="setUp"/>
           <include name="teardown"/>
           <include name="login"/>
         </methods>
-      </class> <!-- execute_org.OrgTest -->
+      </class> <!-- execute_contact.ContactTest -->
     </classes>
-  </test> <!-- Concurrent_Module_Execution(failed) -->
+  </test> <!-- testrunner1(failed) -->
 </suite> <!-- Failed suite [Vtiger_Parallel_Suite] -->

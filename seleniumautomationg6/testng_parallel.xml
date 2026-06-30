@@ -1,16 +1,27 @@
-<suite name="Vtiger_Parallel_Suite" parallel="classes" thread-count="3">
-    
-    <listeners>
-        <listener class-name="listener_utility.List_Imp"/>
-    </listeners>
-    
-    <test name="Concurrent_Module_Execution">
-        <parameter name="browser" value="chrome"/>
-        <classes>
-            <class name="execute_org.OrgTest"/>
-            <class name="execute_leads.LeadsTest"/>
-            <class name="execute_products.ProductsTest"/>
-            <class name="execute_products.CreateMultipleProductsTest"/>
-        </classes>
-    </test>
+<suite name="Suite" parallel="classes" thread-count="4">
+
+	<listeners>
+
+		<listener class-name="listener_utility.List_Imp" />
+
+	</listeners>
+
+	<test name="ChromeTests">
+<!--
+		<parameter name="browser" value="chrome" />
+-->
+		<classes>
+
+			<class name="execute_contact.LoginTest" />
+
+			<class name="tests.LeadTest" />
+
+			<class name="tests.ContactTest" />
+
+			<class name="tests.DealTest" />
+
+		</classes>
+
+	</test>
+
 </suite>

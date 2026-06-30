@@ -51,7 +51,7 @@ public class List_Imp implements ITestListener, ISuiteListener {
 		String methodName = result.getMethod().getMethodName();
 		test.log(Status.FAIL, methodName + " is failed");
 
-		TakesScreenshot tks = (TakesScreenshot) BaseClass.driver;
+		TakesScreenshot tks = (TakesScreenshot) BaseClass.sdriver;
 		String ss = tks.getScreenshotAs(OutputType.BASE64);
 		test.addScreenCaptureFromBase64String(ss, methodName);
 	}

@@ -22,7 +22,8 @@ import object_repository.LoginPage;
 
 public class BaseClass {
 
-	public static WebDriver driver;
+	public WebDriver driver;
+	public static WebDriver sdriver;
 
 	@BeforeClass
 	public void setUp() throws FileNotFoundException, IOException, ParseException {
@@ -39,6 +40,9 @@ public class BaseClass {
 		} else {
 			driver = new ChromeDriver();
 		}
+
+		sdriver = driver;
+
 		WebDriverUtility Wutil = new WebDriverUtility(driver);
 		Wutil.maximize();
 		Wutil.implicitWait(15);
